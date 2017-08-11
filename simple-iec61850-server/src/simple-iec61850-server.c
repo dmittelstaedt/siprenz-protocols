@@ -73,7 +73,7 @@ void runServer() {
 static int parse_opt (int key, char *arg, struct argp_state *state)
 {
      switch (key) {
-          case 't': {
+          case 'p': {
                tcpPort = atoi(arg);
                break;
           }
@@ -93,9 +93,9 @@ int main(int argc, char** argv) {
 
      struct argp_option options[] =
      {
-          { 0, 'p', "PORT", 0, "TCP port for the server"},
-          { 0, 'w', "POWER", 0, "Power value for the server"},
-          { 0, 'v', 0, 0, "Verbose Output"},
+          { "port", 'p', "PORT", 0, "TCP port for the server"},
+          { "power", 'w', "POWER", 0, "start value of the power for the server"},
+          { "verbose", 'v', 0, 0, "Verbose Output"},
           { 0 }
      };
      struct argp argp = { options, parse_opt };
