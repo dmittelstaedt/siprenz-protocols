@@ -1,0 +1,648 @@
+cd examples; make
+make[1]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples'
+for d in mms_client_example1 mms_client_example2 mms_client_example3  mms_client_example4 mms_client_example5 iec61850_client_example1 iec61850_client_example2 iec61850_client_example3 iec61850_client_example4 iec61850_client_example5 iec61850_client_example_reporting iec61850_client_example_log server_example1 server_example2 server_example3 server_example4 server_example5 server_example_goose server_example_control server_example_config_file server_example_dynamic server_example_complex_array server_example_61400_25 server_example_threadless server_example_setting_groups server_example_logging goose_subscriber goose_publisher sv_subscriber mms_utility iec61850_9_2_LE_example iec61850_sv_client_example sv_publisher sv_subscriber; do(cd $d && make); done
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/mms_client_example1'
+cd ../..; make -f Makefile
+make[3]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1'
+compiling acse.c
+mkdir -p build/src/mms/iso_acse/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_acse/acse.o src/mms/iso_acse/acse.c
+compiling iso_presentation.c
+mkdir -p build/src/mms/iso_presentation/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_presentation/iso_presentation.o src/mms/iso_presentation/iso_presentation.c
+compiling iso_session.c
+mkdir -p build/src/mms/iso_session/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_session/iso_session.o src/mms/iso_session/iso_session.c
+compiling array_list.c
+mkdir -p build/src/common/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/common/array_list.o src/common/array_list.c
+compiling buffer_chain.c
+mkdir -p build/src/common/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/common/buffer_chain.o src/common/buffer_chain.c
+compiling string_utilities.c
+mkdir -p build/src/common/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/common/string_utilities.o src/common/string_utilities.c
+compiling mem_alloc_linked_list.c
+mkdir -p build/src/common/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/common/mem_alloc_linked_list.o src/common/mem_alloc_linked_list.c
+compiling linked_list.c
+mkdir -p build/src/common/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/common/linked_list.o src/common/linked_list.c
+compiling byte_buffer.c
+mkdir -p build/src/common/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/common/byte_buffer.o src/common/byte_buffer.c
+compiling conversions.c
+mkdir -p build/src/common/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/common/conversions.o src/common/conversions.c
+compiling lib_memory.c
+mkdir -p build/src/common/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/common/lib_memory.o src/common/lib_memory.c
+compiling map.c
+mkdir -p build/src/common/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/common/map.o src/common/map.c
+compiling string_map.c
+mkdir -p build/src/common/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/common/string_map.o src/common/string_map.c
+compiling simple_allocator.c
+mkdir -p build/src/common/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/common/simple_allocator.o src/common/simple_allocator.c
+compiling ber_integer.c
+mkdir -p build/src/mms/asn1/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/asn1/ber_integer.o src/mms/asn1/ber_integer.c
+compiling ber_encoder.c
+mkdir -p build/src/mms/asn1/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/asn1/ber_encoder.o src/mms/asn1/ber_encoder.c
+compiling ber_decode.c
+mkdir -p build/src/mms/asn1/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/asn1/ber_decode.o src/mms/asn1/ber_decode.c
+compiling asn1_ber_primitive_value.c
+mkdir -p build/src/mms/asn1/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/asn1/asn1_ber_primitive_value.o src/mms/asn1/asn1_ber_primitive_value.c
+compiling cotp.c
+mkdir -p build/src/mms/iso_cotp/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_cotp/cotp.o src/mms/iso_cotp/cotp.c
+compiling mms_identify_service.c
+mkdir -p build/src/mms/iso_mms/server/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/server/mms_identify_service.o src/mms/iso_mms/server/mms_identify_service.c
+compiling mms_server.c
+mkdir -p build/src/mms/iso_mms/server/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/server/mms_server.o src/mms/iso_mms/server/mms_server.c
+compiling mms_server_common.c
+mkdir -p build/src/mms/iso_mms/server/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/server/mms_server_common.o src/mms/iso_mms/server/mms_server_common.c
+compiling mms_read_service.c
+mkdir -p build/src/mms/iso_mms/server/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/server/mms_read_service.o src/mms/iso_mms/server/mms_read_service.c
+compiling mms_journal_service.c
+mkdir -p build/src/mms/iso_mms/server/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/server/mms_journal_service.o src/mms/iso_mms/server/mms_journal_service.c
+compiling mms_information_report.c
+mkdir -p build/src/mms/iso_mms/server/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/server/mms_information_report.o src/mms/iso_mms/server/mms_information_report.c
+compiling mms_value_cache.c
+mkdir -p build/src/mms/iso_mms/server/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/server/mms_value_cache.o src/mms/iso_mms/server/mms_value_cache.c
+compiling mms_journal.c
+mkdir -p build/src/mms/iso_mms/server/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/server/mms_journal.o src/mms/iso_mms/server/mms_journal.c
+compiling mms_access_result.c
+mkdir -p build/src/mms/iso_mms/server/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/server/mms_access_result.o src/mms/iso_mms/server/mms_access_result.c
+compiling mms_write_service.c
+mkdir -p build/src/mms/iso_mms/server/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/server/mms_write_service.o src/mms/iso_mms/server/mms_write_service.c
+compiling mms_get_namelist_service.c
+mkdir -p build/src/mms/iso_mms/server/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/server/mms_get_namelist_service.o src/mms/iso_mms/server/mms_get_namelist_service.c
+compiling mms_get_var_access_service.c
+mkdir -p build/src/mms/iso_mms/server/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/server/mms_get_var_access_service.o src/mms/iso_mms/server/mms_get_var_access_service.c
+compiling mms_named_variable_list_service.c
+mkdir -p build/src/mms/iso_mms/server/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/server/mms_named_variable_list_service.o src/mms/iso_mms/server/mms_named_variable_list_service.c
+compiling mms_status_service.c
+mkdir -p build/src/mms/iso_mms/server/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/server/mms_status_service.o src/mms/iso_mms/server/mms_status_service.c
+compiling mms_device.c
+mkdir -p build/src/mms/iso_mms/server/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/server/mms_device.o src/mms/iso_mms/server/mms_device.c
+compiling mms_file_service.c
+mkdir -p build/src/mms/iso_mms/server/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/server/mms_file_service.o src/mms/iso_mms/server/mms_file_service.c
+compiling mms_domain.c
+mkdir -p build/src/mms/iso_mms/server/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/server/mms_domain.o src/mms/iso_mms/server/mms_domain.c
+compiling mms_server_connection.c
+mkdir -p build/src/mms/iso_mms/server/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/server/mms_server_connection.o src/mms/iso_mms/server/mms_server_connection.c
+compiling mms_association_service.c
+mkdir -p build/src/mms/iso_mms/server/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/server/mms_association_service.o src/mms/iso_mms/server/mms_association_service.c
+compiling mms_named_variable_list.c
+mkdir -p build/src/mms/iso_mms/server/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/server/mms_named_variable_list.o src/mms/iso_mms/server/mms_named_variable_list.c
+compiling mms_client_named_variable_list.c
+mkdir -p build/src/mms/iso_mms/client/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/client/mms_client_named_variable_list.o src/mms/iso_mms/client/mms_client_named_variable_list.c
+compiling mms_client_status.c
+mkdir -p build/src/mms/iso_mms/client/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/client/mms_client_status.o src/mms/iso_mms/client/mms_client_status.c
+compiling mms_client_identify.c
+mkdir -p build/src/mms/iso_mms/client/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/client/mms_client_identify.o src/mms/iso_mms/client/mms_client_identify.c
+compiling mms_client_get_namelist.c
+mkdir -p build/src/mms/iso_mms/client/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/client/mms_client_get_namelist.o src/mms/iso_mms/client/mms_client_get_namelist.c
+compiling mms_client_read.c
+mkdir -p build/src/mms/iso_mms/client/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/client/mms_client_read.o src/mms/iso_mms/client/mms_client_read.c
+compiling mms_client_connection.c
+mkdir -p build/src/mms/iso_mms/client/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/client/mms_client_connection.o src/mms/iso_mms/client/mms_client_connection.c
+compiling mms_client_common.c
+mkdir -p build/src/mms/iso_mms/client/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/client/mms_client_common.o src/mms/iso_mms/client/mms_client_common.c
+compiling mms_client_initiate.c
+mkdir -p build/src/mms/iso_mms/client/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/client/mms_client_initiate.o src/mms/iso_mms/client/mms_client_initiate.c
+compiling mms_client_journals.c
+mkdir -p build/src/mms/iso_mms/client/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/client/mms_client_journals.o src/mms/iso_mms/client/mms_client_journals.c
+compiling mms_client_write.c
+mkdir -p build/src/mms/iso_mms/client/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/client/mms_client_write.o src/mms/iso_mms/client/mms_client_write.c
+compiling mms_client_files.c
+mkdir -p build/src/mms/iso_mms/client/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/client/mms_client_files.o src/mms/iso_mms/client/mms_client_files.c
+compiling mms_client_get_var_access.c
+mkdir -p build/src/mms/iso_mms/client/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/client/mms_client_get_var_access.o src/mms/iso_mms/client/mms_client_get_var_access.c
+compiling iso_client_connection.c
+mkdir -p build/src/mms/iso_client/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_client/iso_client_connection.o src/mms/iso_client/iso_client_connection.c
+compiling iso_connection_parameters.c
+mkdir -p build/src/mms/iso_common/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_common/iso_connection_parameters.o src/mms/iso_common/iso_connection_parameters.c
+compiling mms_type_spec.c
+mkdir -p build/src/mms/iso_mms/common/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/common/mms_type_spec.o src/mms/iso_mms/common/mms_type_spec.c
+compiling mms_common_msg.c
+mkdir -p build/src/mms/iso_mms/common/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/common/mms_common_msg.o src/mms/iso_mms/common/mms_common_msg.c
+compiling mms_value.c
+mkdir -p build/src/mms/iso_mms/common/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/common/mms_value.o src/mms/iso_mms/common/mms_value.c
+compiling Integer32.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/Integer32.o src/mms/iso_mms/asn1c/Integer32.c
+compiling ServiceSupportOptions.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/ServiceSupportOptions.o src/mms/iso_mms/asn1c/ServiceSupportOptions.c
+compiling ObjectClass.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/ObjectClass.o src/mms/iso_mms/asn1c/ObjectClass.c
+compiling per_encoder.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/per_encoder.o src/mms/iso_mms/asn1c/per_encoder.c
+compiling ServiceError.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/ServiceError.o src/mms/iso_mms/asn1c/ServiceError.c
+compiling ConcludeResponsePDU.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/ConcludeResponsePDU.o src/mms/iso_mms/asn1c/ConcludeResponsePDU.c
+compiling xer_encoder.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/xer_encoder.o src/mms/iso_mms/asn1c/xer_encoder.c
+compiling constr_SEQUENCE.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/constr_SEQUENCE.o src/mms/iso_mms/asn1c/constr_SEQUENCE.c
+compiling Address.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/Address.o src/mms/iso_mms/asn1c/Address.c
+compiling GetVariableAccessAttributesRequest.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/GetVariableAccessAttributesRequest.o src/mms/iso_mms/asn1c/GetVariableAccessAttributesRequest.c
+compiling constr_SET_OF.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/constr_SET_OF.o src/mms/iso_mms/asn1c/constr_SET_OF.c
+compiling DataSequence.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/DataSequence.o src/mms/iso_mms/asn1c/DataSequence.c
+compiling GetNameListRequest.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/GetNameListRequest.o src/mms/iso_mms/asn1c/GetNameListRequest.c
+compiling constraints.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/constraints.o src/mms/iso_mms/asn1c/constraints.c
+compiling RejectPDU.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/RejectPDU.o src/mms/iso_mms/asn1c/RejectPDU.c
+compiling StructComponent.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/StructComponent.o src/mms/iso_mms/asn1c/StructComponent.c
+compiling UtcTime.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/UtcTime.o src/mms/iso_mms/asn1c/UtcTime.c
+compiling ScatteredAccessDescription.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/ScatteredAccessDescription.o src/mms/iso_mms/asn1c/ScatteredAccessDescription.c
+compiling ConfirmedRequestPdu.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/ConfirmedRequestPdu.o src/mms/iso_mms/asn1c/ConfirmedRequestPdu.c
+compiling constr_TYPE.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/constr_TYPE.o src/mms/iso_mms/asn1c/constr_TYPE.c
+compiling DeleteNamedVariableListResponse.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/DeleteNamedVariableListResponse.o src/mms/iso_mms/asn1c/DeleteNamedVariableListResponse.c
+compiling ber_tlv_length.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/ber_tlv_length.o src/mms/iso_mms/asn1c/ber_tlv_length.c
+compiling MMSString.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/MMSString.o src/mms/iso_mms/asn1c/MMSString.c
+compiling xer_support.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/xer_support.o src/mms/iso_mms/asn1c/xer_support.c
+compiling TypeSpecification.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/TypeSpecification.o src/mms/iso_mms/asn1c/TypeSpecification.c
+compiling ObjectName.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/ObjectName.o src/mms/iso_mms/asn1c/ObjectName.c
+compiling InitiateRequestPdu.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/InitiateRequestPdu.o src/mms/iso_mms/asn1c/InitiateRequestPdu.c
+compiling GetNameListResponse.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/GetNameListResponse.o src/mms/iso_mms/asn1c/GetNameListResponse.c
+compiling GetVariableAccessAttributesResponse.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/GetVariableAccessAttributesResponse.o src/mms/iso_mms/asn1c/GetVariableAccessAttributesResponse.c
+compiling MmsPdu.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/MmsPdu.o src/mms/iso_mms/asn1c/MmsPdu.c
+compiling GetNamedVariableListAttributesResponse.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/GetNamedVariableListAttributesResponse.o src/mms/iso_mms/asn1c/GetNamedVariableListAttributesResponse.c
+compiling VisibleString.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/VisibleString.o src/mms/iso_mms/asn1c/VisibleString.c
+compiling AlternateAccess.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/AlternateAccess.o src/mms/iso_mms/asn1c/AlternateAccess.c
+compiling ConfirmedServiceResponse.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/ConfirmedServiceResponse.o src/mms/iso_mms/asn1c/ConfirmedServiceResponse.c
+compiling ListOfVariableSeq.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/ListOfVariableSeq.o src/mms/iso_mms/asn1c/ListOfVariableSeq.c
+compiling NativeInteger.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/NativeInteger.o src/mms/iso_mms/asn1c/NativeInteger.c
+compiling GeneralizedTime.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/GeneralizedTime.o src/mms/iso_mms/asn1c/GeneralizedTime.c
+compiling InitiateErrorPdu.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/InitiateErrorPdu.o src/mms/iso_mms/asn1c/InitiateErrorPdu.c
+compiling Data.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/Data.o src/mms/iso_mms/asn1c/Data.c
+compiling ReadResponse.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/ReadResponse.o src/mms/iso_mms/asn1c/ReadResponse.c
+compiling ParameterSupportOptions.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/ParameterSupportOptions.o src/mms/iso_mms/asn1c/ParameterSupportOptions.c
+compiling DataAccessError.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/DataAccessError.o src/mms/iso_mms/asn1c/DataAccessError.c
+compiling Integer16.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/Integer16.o src/mms/iso_mms/asn1c/Integer16.c
+compiling asn_SET_OF.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/asn_SET_OF.o src/mms/iso_mms/asn1c/asn_SET_OF.c
+compiling UnconfirmedPDU.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/UnconfirmedPDU.o src/mms/iso_mms/asn1c/UnconfirmedPDU.c
+compiling ReadRequest.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/ReadRequest.o src/mms/iso_mms/asn1c/ReadRequest.c
+compiling ConcludeRequestPDU.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/ConcludeRequestPDU.o src/mms/iso_mms/asn1c/ConcludeRequestPDU.c
+compiling der_encoder.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/der_encoder.o src/mms/iso_mms/asn1c/der_encoder.c
+compiling Identifier.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/Identifier.o src/mms/iso_mms/asn1c/Identifier.c
+compiling NULL.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/NULL.o src/mms/iso_mms/asn1c/NULL.c
+compiling InformationReport.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/InformationReport.o src/mms/iso_mms/asn1c/InformationReport.c
+compiling OCTET_STRING.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/OCTET_STRING.o src/mms/iso_mms/asn1c/OCTET_STRING.c
+compiling UnconfirmedService.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/UnconfirmedService.o src/mms/iso_mms/asn1c/UnconfirmedService.c
+compiling AccessResult.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/AccessResult.o src/mms/iso_mms/asn1c/AccessResult.c
+compiling TimeOfDay.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/TimeOfDay.o src/mms/iso_mms/asn1c/TimeOfDay.c
+compiling INTEGER.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/INTEGER.o src/mms/iso_mms/asn1c/INTEGER.c
+compiling asn_SEQUENCE_OF.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/asn_SEQUENCE_OF.o src/mms/iso_mms/asn1c/asn_SEQUENCE_OF.c
+compiling Unsigned32.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/Unsigned32.o src/mms/iso_mms/asn1c/Unsigned32.c
+compiling FloatingPoint.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/FloatingPoint.o src/mms/iso_mms/asn1c/FloatingPoint.c
+compiling ConfirmedResponsePdu.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/ConfirmedResponsePdu.o src/mms/iso_mms/asn1c/ConfirmedResponsePdu.c
+compiling per_decoder.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/per_decoder.o src/mms/iso_mms/asn1c/per_decoder.c
+compiling xer_decoder.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/xer_decoder.o src/mms/iso_mms/asn1c/xer_decoder.c
+compiling per_support.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/per_support.o src/mms/iso_mms/asn1c/per_support.c
+compiling Integer8.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/Integer8.o src/mms/iso_mms/asn1c/Integer8.c
+compiling UTF8String.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/UTF8String.o src/mms/iso_mms/asn1c/UTF8String.c
+compiling IndexRangeSeq.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/IndexRangeSeq.o src/mms/iso_mms/asn1c/IndexRangeSeq.c
+compiling DefineNamedVariableListRequest.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/DefineNamedVariableListRequest.o src/mms/iso_mms/asn1c/DefineNamedVariableListRequest.c
+compiling WriteRequest.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/WriteRequest.o src/mms/iso_mms/asn1c/WriteRequest.c
+compiling InitRequestDetail.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/InitRequestDetail.o src/mms/iso_mms/asn1c/InitRequestDetail.c
+compiling VariableSpecification.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/VariableSpecification.o src/mms/iso_mms/asn1c/VariableSpecification.c
+compiling ConfirmedErrorPDU.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/ConfirmedErrorPDU.o src/mms/iso_mms/asn1c/ConfirmedErrorPDU.c
+compiling ber_tlv_tag.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/ber_tlv_tag.o src/mms/iso_mms/asn1c/ber_tlv_tag.c
+compiling AlternateAccessSelection.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/AlternateAccessSelection.o src/mms/iso_mms/asn1c/AlternateAccessSelection.c
+compiling BOOLEAN.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/BOOLEAN.o src/mms/iso_mms/asn1c/BOOLEAN.c
+compiling VariableAccessSpecification.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/VariableAccessSpecification.o src/mms/iso_mms/asn1c/VariableAccessSpecification.c
+compiling InitResponseDetail.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/InitResponseDetail.o src/mms/iso_mms/asn1c/InitResponseDetail.c
+compiling asn_codecs_prim.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/asn_codecs_prim.o src/mms/iso_mms/asn1c/asn_codecs_prim.c
+compiling constr_CHOICE.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/constr_CHOICE.o src/mms/iso_mms/asn1c/constr_CHOICE.c
+compiling WriteResponse.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/WriteResponse.o src/mms/iso_mms/asn1c/WriteResponse.c
+compiling GetNamedVariableListAttributesRequest.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/GetNamedVariableListAttributesRequest.o src/mms/iso_mms/asn1c/GetNamedVariableListAttributesRequest.c
+compiling BIT_STRING.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/BIT_STRING.o src/mms/iso_mms/asn1c/BIT_STRING.c
+compiling Unsigned16.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/Unsigned16.o src/mms/iso_mms/asn1c/Unsigned16.c
+compiling DeleteNamedVariableListRequest.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/DeleteNamedVariableListRequest.o src/mms/iso_mms/asn1c/DeleteNamedVariableListRequest.c
+compiling ConfirmedServiceRequest.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/ConfirmedServiceRequest.o src/mms/iso_mms/asn1c/ConfirmedServiceRequest.c
+compiling DefineNamedVariableListResponse.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/DefineNamedVariableListResponse.o src/mms/iso_mms/asn1c/DefineNamedVariableListResponse.c
+compiling NativeEnumerated.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/NativeEnumerated.o src/mms/iso_mms/asn1c/NativeEnumerated.c
+compiling InitiateResponsePdu.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/InitiateResponsePdu.o src/mms/iso_mms/asn1c/InitiateResponsePdu.c
+compiling constr_SEQUENCE_OF.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/constr_SEQUENCE_OF.o src/mms/iso_mms/asn1c/constr_SEQUENCE_OF.c
+compiling Unsigned8.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/Unsigned8.o src/mms/iso_mms/asn1c/Unsigned8.c
+compiling ber_decoder.c
+mkdir -p build/src/mms/iso_mms/asn1c/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_mms/asn1c/ber_decoder.o src/mms/iso_mms/asn1c/ber_decoder.c
+compiling iso_server.c
+mkdir -p build/src/mms/iso_server/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_server/iso_server.o src/mms/iso_server/iso_server.c
+compiling iso_connection.c
+mkdir -p build/src/mms/iso_server/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/mms/iso_server/iso_connection.o src/mms/iso_server/iso_connection.c
+compiling log_storage.c
+mkdir -p build/src/logging/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/logging/log_storage.o src/logging/log_storage.c
+compiling goose_receiver.c
+mkdir -p build/src/goose/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/goose/goose_receiver.o src/goose/goose_receiver.c
+compiling goose_publisher.c
+mkdir -p build/src/goose/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/goose/goose_publisher.o src/goose/goose_publisher.c
+compiling goose_subscriber.c
+mkdir -p build/src/goose/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/goose/goose_subscriber.o src/goose/goose_subscriber.c
+compiling sv_subscriber.c
+mkdir -p build/src/sampled_values/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/sampled_values/sv_subscriber.o src/sampled_values/sv_subscriber.c
+compiling sv_publisher.c
+mkdir -p build/src/sampled_values/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/sampled_values/sv_publisher.o src/sampled_values/sv_publisher.c
+compiling client_control.c
+mkdir -p build/src/iec61850/client/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/iec61850/client/client_control.o src/iec61850/client/client_control.c
+compiling client_report_control.c
+mkdir -p build/src/iec61850/client/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/iec61850/client/client_report_control.o src/iec61850/client/client_report_control.c
+compiling ied_connection.c
+mkdir -p build/src/iec61850/client/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/iec61850/client/ied_connection.o src/iec61850/client/ied_connection.c
+compiling client_report.c
+mkdir -p build/src/iec61850/client/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/iec61850/client/client_report.o src/iec61850/client/client_report.c
+compiling client_sv_control.c
+mkdir -p build/src/iec61850/client/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/iec61850/client/client_sv_control.o src/iec61850/client/client_sv_control.c
+compiling client_goose_control.c
+mkdir -p build/src/iec61850/client/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/iec61850/client/client_goose_control.o src/iec61850/client/client_goose_control.c
+compiling iec61850_common.c
+mkdir -p build/src/iec61850/common/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/iec61850/common/iec61850_common.o src/iec61850/common/iec61850_common.c
+compiling dynamic_model.c
+mkdir -p build/src/iec61850/server/model/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/iec61850/server/model/dynamic_model.o src/iec61850/server/model/dynamic_model.c
+compiling config_file_parser.c
+mkdir -p build/src/iec61850/server/model/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/iec61850/server/model/config_file_parser.o src/iec61850/server/model/config_file_parser.c
+compiling model.c
+mkdir -p build/src/iec61850/server/model/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/iec61850/server/model/model.o src/iec61850/server/model/model.c
+compiling cdc.c
+mkdir -p build/src/iec61850/server/model/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/iec61850/server/model/cdc.o src/iec61850/server/model/cdc.c
+compiling mms_sv.c
+mkdir -p build/src/iec61850/server/mms_mapping/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/iec61850/server/mms_mapping/mms_sv.o src/iec61850/server/mms_mapping/mms_sv.c
+compiling mms_mapping.c
+mkdir -p build/src/iec61850/server/mms_mapping/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/iec61850/server/mms_mapping/mms_mapping.o src/iec61850/server/mms_mapping/mms_mapping.c
+compiling reporting.c
+mkdir -p build/src/iec61850/server/mms_mapping/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/iec61850/server/mms_mapping/reporting.o src/iec61850/server/mms_mapping/reporting.c
+compiling logging.c
+mkdir -p build/src/iec61850/server/mms_mapping/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/iec61850/server/mms_mapping/logging.o src/iec61850/server/mms_mapping/logging.c
+compiling mms_goose.c
+mkdir -p build/src/iec61850/server/mms_mapping/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/iec61850/server/mms_mapping/mms_goose.o src/iec61850/server/mms_mapping/mms_goose.c
+compiling control.c
+mkdir -p build/src/iec61850/server/mms_mapping/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/iec61850/server/mms_mapping/control.o src/iec61850/server/mms_mapping/control.c
+compiling client_connection.c
+mkdir -p build/src/iec61850/server/impl/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/iec61850/server/impl/client_connection.o src/iec61850/server/impl/client_connection.c
+compiling ied_server.c
+mkdir -p build/src/iec61850/server/impl/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/iec61850/server/impl/ied_server.o src/iec61850/server/impl/ied_server.c
+compiling socket_linux.c
+mkdir -p build/src/hal/socket/linux/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/hal/socket/linux/socket_linux.o src/hal/socket/linux/socket_linux.c
+compiling thread_linux.c
+mkdir -p build/src/hal/thread/linux/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/hal/thread/linux/thread_linux.o src/hal/thread/linux/thread_linux.c
+compiling ethernet_linux.c
+mkdir -p build/src/hal/ethernet/linux/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/hal/ethernet/linux/ethernet_linux.o src/hal/ethernet/linux/ethernet_linux.c
+compiling file_provider_linux.c
+mkdir -p build/src/hal/filesystem/linux/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/hal/filesystem/linux/file_provider_linux.o src/hal/filesystem/linux/file_provider_linux.c
+compiling time.c
+mkdir -p build/src/hal/time/unix/
+gcc -g  -std=gnu99 -Wstrict-prototypes -Wuninitialized  -Wsign-compare  -Wpointer-arith  -Wnested-externs  -Wmissing-declarations  -Wshadow -Wall -c -Iconfig -Isrc/common/inc -Isrc/mms/iso_mms/asn1c -Isrc/mms/inc -Isrc/mms/inc_private -Isrc/hal/inc -Isrc/goose -Isrc/sampled_values -Isrc/iec61850/inc -Isrc/iec61850/inc_private -Isrc/logging -o build/src/hal/time/unix/time.o src/hal/time/unix/time.c
+ar r ./build/libiec61850.a ./build/src/mms/iso_acse/acse.o ./build/src/mms/iso_presentation/iso_presentation.o ./build/src/mms/iso_session/iso_session.o ./build/src/common/array_list.o ./build/src/common/buffer_chain.o ./build/src/common/string_utilities.o ./build/src/common/mem_alloc_linked_list.o ./build/src/common/linked_list.o ./build/src/common/byte_buffer.o ./build/src/common/conversions.o ./build/src/common/lib_memory.o ./build/src/common/map.o ./build/src/common/string_map.o ./build/src/common/simple_allocator.o ./build/src/mms/asn1/ber_integer.o ./build/src/mms/asn1/ber_encoder.o ./build/src/mms/asn1/ber_decode.o ./build/src/mms/asn1/asn1_ber_primitive_value.o ./build/src/mms/iso_cotp/cotp.o ./build/src/mms/iso_mms/server/mms_identify_service.o ./build/src/mms/iso_mms/server/mms_server.o ./build/src/mms/iso_mms/server/mms_server_common.o ./build/src/mms/iso_mms/server/mms_read_service.o ./build/src/mms/iso_mms/server/mms_journal_service.o ./build/src/mms/iso_mms/server/mms_information_report.o ./build/src/mms/iso_mms/server/mms_value_cache.o ./build/src/mms/iso_mms/server/mms_journal.o ./build/src/mms/iso_mms/server/mms_access_result.o ./build/src/mms/iso_mms/server/mms_write_service.o ./build/src/mms/iso_mms/server/mms_get_namelist_service.o ./build/src/mms/iso_mms/server/mms_get_var_access_service.o ./build/src/mms/iso_mms/server/mms_named_variable_list_service.o ./build/src/mms/iso_mms/server/mms_status_service.o ./build/src/mms/iso_mms/server/mms_device.o ./build/src/mms/iso_mms/server/mms_file_service.o ./build/src/mms/iso_mms/server/mms_domain.o ./build/src/mms/iso_mms/server/mms_server_connection.o ./build/src/mms/iso_mms/server/mms_association_service.o ./build/src/mms/iso_mms/server/mms_named_variable_list.o ./build/src/mms/iso_mms/client/mms_client_named_variable_list.o ./build/src/mms/iso_mms/client/mms_client_status.o ./build/src/mms/iso_mms/client/mms_client_identify.o ./build/src/mms/iso_mms/client/mms_client_get_namelist.o ./build/src/mms/iso_mms/client/mms_client_read.o ./build/src/mms/iso_mms/client/mms_client_connection.o ./build/src/mms/iso_mms/client/mms_client_common.o ./build/src/mms/iso_mms/client/mms_client_initiate.o ./build/src/mms/iso_mms/client/mms_client_journals.o ./build/src/mms/iso_mms/client/mms_client_write.o ./build/src/mms/iso_mms/client/mms_client_files.o ./build/src/mms/iso_mms/client/mms_client_get_var_access.o ./build/src/mms/iso_client/iso_client_connection.o ./build/src/mms/iso_common/iso_connection_parameters.o ./build/src/mms/iso_mms/common/mms_type_spec.o ./build/src/mms/iso_mms/common/mms_common_msg.o ./build/src/mms/iso_mms/common/mms_value.o ./build/src/mms/iso_mms/asn1c/ber_tlv_length.o ./build/src/mms/iso_mms/asn1c/ber_decoder.o ./build/src/mms/iso_mms/asn1c/xer_support.o ./build/src/mms/iso_mms/asn1c/TypeSpecification.o ./build/src/mms/iso_mms/asn1c/constr_SEQUENCE_OF.o ./build/src/mms/iso_mms/asn1c/GetVariableAccessAttributesResponse.o ./build/src/mms/iso_mms/asn1c/GetNamedVariableListAttributesResponse.o ./build/src/mms/iso_mms/asn1c/VisibleString.o ./build/src/mms/iso_mms/asn1c/ConfirmedServiceResponse.o ./build/src/mms/iso_mms/asn1c/Data.o ./build/src/mms/iso_mms/asn1c/ReadResponse.o ./build/src/mms/iso_mms/asn1c/ParameterSupportOptions.o ./build/src/mms/iso_mms/asn1c/DataAccessError.o ./build/src/mms/iso_mms/asn1c/Integer16.o ./build/src/mms/iso_mms/asn1c/asn_codecs_prim.o ./build/src/mms/iso_mms/asn1c/DefineNamedVariableListRequest.o ./build/src/mms/iso_mms/asn1c/UnconfirmedPDU.o ./build/src/mms/iso_mms/asn1c/DataSequence.o ./build/src/mms/iso_mms/asn1c/InformationReport.o ./build/src/mms/iso_mms/asn1c/MmsPdu.o ./build/src/mms/iso_mms/asn1c/ServiceError.o ./build/src/mms/iso_mms/asn1c/UTF8String.o ./build/src/mms/iso_mms/asn1c/DefineNamedVariableListResponse.o ./build/src/mms/iso_mms/asn1c/FloatingPoint.o ./build/src/mms/iso_mms/asn1c/xer_decoder.o ./build/src/mms/iso_mms/asn1c/constraints.o ./build/src/mms/iso_mms/asn1c/InitiateErrorPdu.o ./build/src/mms/iso_mms/asn1c/DeleteNamedVariableListResponse.o ./build/src/mms/iso_mms/asn1c/ConfirmedErrorPDU.o ./build/src/mms/iso_mms/asn1c/BOOLEAN.o ./build/src/mms/iso_mms/asn1c/InitiateResponsePdu.o ./build/src/mms/iso_mms/asn1c/constr_CHOICE.o ./build/src/mms/iso_mms/asn1c/WriteResponse.o ./build/src/mms/iso_mms/asn1c/BIT_STRING.o ./build/src/mms/iso_mms/asn1c/Unsigned16.o ./build/src/mms/iso_mms/asn1c/VariableSpecification.o ./build/src/mms/iso_mms/asn1c/NativeEnumerated.o ./build/src/mms/iso_mms/asn1c/MMSString.o ./build/src/mms/iso_mms/asn1c/InitRequestDetail.o ./build/src/mms/iso_mms/asn1c/ObjectClass.o ./build/src/mms/iso_mms/asn1c/Identifier.o ./build/src/mms/iso_mms/asn1c/GetVariableAccessAttributesRequest.o ./build/src/mms/iso_mms/asn1c/ReadRequest.o ./build/src/mms/iso_mms/asn1c/ber_tlv_tag.o ./build/src/mms/iso_mms/asn1c/UtcTime.o ./build/src/mms/iso_mms/asn1c/StructComponent.o ./build/src/mms/iso_mms/asn1c/ConfirmedRequestPdu.o ./build/src/mms/iso_mms/asn1c/constr_TYPE.o ./build/src/mms/iso_mms/asn1c/Integer32.o ./build/src/mms/iso_mms/asn1c/per_support.o ./build/src/mms/iso_mms/asn1c/AccessResult.o ./build/src/mms/iso_mms/asn1c/GeneralizedTime.o ./build/src/mms/iso_mms/asn1c/asn_SET_OF.o ./build/src/mms/iso_mms/asn1c/ConcludeRequestPDU.o ./build/src/mms/iso_mms/asn1c/der_encoder.o ./build/src/mms/iso_mms/asn1c/NULL.o ./build/src/mms/iso_mms/asn1c/Integer8.o ./build/src/mms/iso_mms/asn1c/Address.o ./build/src/mms/iso_mms/asn1c/InitiateRequestPdu.o ./build/src/mms/iso_mms/asn1c/TimeOfDay.o ./build/src/mms/iso_mms/asn1c/RejectPDU.o ./build/src/mms/iso_mms/asn1c/asn_SEQUENCE_OF.o ./build/src/mms/iso_mms/asn1c/ConfirmedResponsePdu.o ./build/src/mms/iso_mms/asn1c/per_decoder.o ./build/src/mms/iso_mms/asn1c/IndexRangeSeq.o ./build/src/mms/iso_mms/asn1c/ServiceSupportOptions.o ./build/src/mms/iso_mms/asn1c/WriteRequest.o ./build/src/mms/iso_mms/asn1c/Unsigned8.o ./build/src/mms/iso_mms/asn1c/AlternateAccessSelection.o ./build/src/mms/iso_mms/asn1c/VariableAccessSpecification.o ./build/src/mms/iso_mms/asn1c/InitResponseDetail.o ./build/src/mms/iso_mms/asn1c/ListOfVariableSeq.o ./build/src/mms/iso_mms/asn1c/GetNamedVariableListAttributesRequest.o ./build/src/mms/iso_mms/asn1c/DeleteNamedVariableListRequest.o ./build/src/mms/iso_mms/asn1c/ConfirmedServiceRequest.o ./build/src/mms/iso_mms/asn1c/NativeInteger.o ./build/src/mms/iso_mms/asn1c/OCTET_STRING.o ./build/src/mms/iso_mms/asn1c/Unsigned32.o ./build/src/mms/iso_mms/asn1c/per_encoder.o ./build/src/mms/iso_mms/asn1c/ConcludeResponsePDU.o ./build/src/mms/iso_mms/asn1c/xer_encoder.o ./build/src/mms/iso_mms/asn1c/constr_SEQUENCE.o ./build/src/mms/iso_mms/asn1c/ObjectName.o ./build/src/mms/iso_mms/asn1c/constr_SET_OF.o ./build/src/mms/iso_mms/asn1c/GetNameListRequest.o ./build/src/mms/iso_mms/asn1c/GetNameListResponse.o ./build/src/mms/iso_mms/asn1c/INTEGER.o ./build/src/mms/iso_mms/asn1c/UnconfirmedService.o ./build/src/mms/iso_mms/asn1c/ScatteredAccessDescription.o ./build/src/mms/iso_mms/asn1c/AlternateAccess.o ./build/src/mms/iso_server/iso_server.o ./build/src/mms/iso_server/iso_connection.o ./build/src/logging/log_storage.o ./build/src/goose/goose_receiver.o ./build/src/goose/goose_publisher.o ./build/src/goose/goose_subscriber.o ./build/src/sampled_values/sv_subscriber.o ./build/src/sampled_values/sv_publisher.o ./build/src/iec61850/client/client_control.o ./build/src/iec61850/client/client_report_control.o ./build/src/iec61850/client/ied_connection.o ./build/src/iec61850/client/client_report.o ./build/src/iec61850/client/client_sv_control.o ./build/src/iec61850/client/client_goose_control.o ./build/src/iec61850/common/iec61850_common.o ./build/src/iec61850/server/model/dynamic_model.o ./build/src/iec61850/server/model/config_file_parser.o ./build/src/iec61850/server/model/model.o ./build/src/iec61850/server/model/cdc.o ./build/src/iec61850/server/mms_mapping/mms_sv.o ./build/src/iec61850/server/mms_mapping/mms_mapping.o ./build/src/iec61850/server/mms_mapping/reporting.o ./build/src/iec61850/server/mms_mapping/logging.o ./build/src/iec61850/server/mms_mapping/mms_goose.o ./build/src/iec61850/server/mms_mapping/control.o ./build/src/iec61850/server/impl/client_connection.o ./build/src/iec61850/server/impl/ied_server.o ./build/src/hal/socket/linux/socket_linux.o ./build/src/hal/thread/linux/thread_linux.o ./build/src/hal/ethernet/linux/ethernet_linux.o ./build/src/hal/filesystem/linux/file_provider_linux.o ./build/src/hal/time/unix/time.o
+ranlib ./build/libiec61850.a
+make[3]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1'
+gcc -g   -o mms_client_example1 mms_client_example1.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/mms_client_example1'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/mms_client_example2'
+gcc -g   -o mms_client_example2 mms_client_example2.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/mms_client_example2'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/mms_client_example3'
+gcc -g   -o mms_client_example3 mms_client_example3.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/mms_client_example3'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/mms_client_example4'
+gcc -g   -o mms_client_example4 mms_client_example4.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/mms_client_example4'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/mms_client_example5'
+gcc -g   -o mms_client_example5 mms_client_example5.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/mms_client_example5'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/iec61850_client_example1'
+gcc -g   -o client_example1 client_example1.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/iec61850_client_example1'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/iec61850_client_example2'
+gcc -g   -o client_example2 client_example2.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/iec61850_client_example2'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/iec61850_client_example3'
+gcc -g   -o client_example3 client_example3.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/iec61850_client_example3'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/iec61850_client_example4'
+gcc -g   -o client_example4 client_example4.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/iec61850_client_example4'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/iec61850_client_example5'
+gcc -g   -o client_example5 client_example5.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/iec61850_client_example5'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/iec61850_client_example_reporting'
+gcc -g   -o client_example_reporting client_example_reporting.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/iec61850_client_example_reporting'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/iec61850_client_example_log'
+gcc -g   -o client_example_log client_example_log.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/iec61850_client_example_log'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example1'
+gcc -g   -o server_example1 server_example1.c static_model.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example1'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example2'
+gcc -g   -o server_example2 server_example2.c static_model.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a  -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example2'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example3'
+gcc -g   -o server_example3 server_example3.c static_model.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread -lm
+cp server_example3 vmd-filestore/IEDSERVER.BIN
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example3'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example4'
+gcc -g   -o server_example4 server_example4.c static_model.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example4'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example5'
+gcc -g   -o server_example5 server_example5.c static_model.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example5'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example_goose'
+gcc -g   -o server_example_goose server_example_goose.c static_model.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example_goose'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example_control'
+gcc -g   -o server_example_control server_example_control.c static_model.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example_control'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example_config_file'
+gcc -g   -o server_example_config_file server_example_config_file.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example_config_file'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example_dynamic'
+gcc -g   -o server_example_dynamic server_example_dynamic.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example_dynamic'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example_complex_array'
+gcc -g   -o server_example_ca server_example_ca.c static_model.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example_complex_array'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example_61400_25'
+gcc -g   -o server_example_61400_25 server_example_61400_25.c static_model.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example_61400_25'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example_threadless'
+gcc -g   -o server_example_threadless server_example_threadless.c static_model.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread -lm
+cp server_example_threadless vmd-filestore/IEDSERVER.BIN
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example_threadless'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example_setting_groups'
+gcc -g   -o server_example_sg server_example_sg.c static_model.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a  -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example_setting_groups'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example_logging'
+gcc -g   -o server_example_logging server_example_logging.c static_model.c ../../src/logging/drivers/sqlite/log_storage_sqlite.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread -lm -lsqlite3
+Makefile:25: recipe for target 'server_example_logging' failed
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/server_example_logging'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/goose_subscriber'
+gcc -g   -o goose_subscriber_example goose_subscriber_example.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/goose_subscriber'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/goose_publisher'
+gcc -g   -o goose_publisher_example goose_publisher_example.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/goose_publisher'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/sv_subscriber'
+gcc -g   -o sv_subscriber sv_subscriber_example.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/sv_subscriber'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/mms_utility'
+gcc -g   -o mms_utility mms_utility.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/mms_utility'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/iec61850_9_2_LE_example'
+gcc -g   -o sv_9_2LE_example iec61850_9_2_LE_example.c static_model.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a  -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/iec61850_9_2_LE_example'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/iec61850_sv_client_example'
+gcc -g   -o sv_client_example sv_client_example.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/iec61850_sv_client_example'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/sv_publisher'
+gcc -g   -o sv_publisher sv_publisher_example.c -I../../config -I../../src/common/inc -I../../src/mms/inc -I../../src/mms/inc_private -I../../src/mms/asn1 -I../../src/iec61850/inc -I../../src/iec61850/inc_private -I../../src/hal/inc -I../../src/goose -I../../src/sampled_values -I../../src/logging ../../build/libiec61850.a -lpthread
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/sv_publisher'
+make[2]: Entering directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/sv_subscriber'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples/sv_subscriber'
+make[1]: Leaving directory '/home/david/workspace_iec/libiec61850-1.0.1/examples'
