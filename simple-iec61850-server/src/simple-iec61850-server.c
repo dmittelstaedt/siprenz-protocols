@@ -11,9 +11,9 @@
 extern IedModel iedModel;
 
 static int running = 0;
-static int tcpPort = 10102;
-static float power = 500.f;
-static int isVerbose = 0;
+int tcpPort = 10102;
+float power = 500.f;
+int isVerbose = 0;
 
 void sigint_handler(int signalId)
 {
@@ -23,8 +23,6 @@ void sigint_handler(int signalId)
 
 void runServer() {
      IedServer iedServer = IedServer_create(&iedModel);
-
-     // set initial measurement and status values from process
 
      /* MMS server will be instructed to start listening to client connections. */
      IedServer_start(iedServer, tcpPort);
