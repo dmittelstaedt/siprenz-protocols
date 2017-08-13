@@ -25,7 +25,7 @@ CFLAGS += -pie
 CFLAGS += -rdynamic
 CFLAGS += -U_FORTIFY_SOURCE
 
-.PHONY: clean
+.PHONY: clean doc
 
 build:
 	mkdir -p $(BLDDIR)
@@ -34,6 +34,9 @@ build:
 
 install:
 	cp $(BLDDIR)/simple-iec61850-client $(INSDIR)/simple-iec61850-client
+
+doc:
+	doxygen
 
 clean:
 	rm -rf $(BLDDIR)

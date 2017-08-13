@@ -112,7 +112,7 @@ int main(int argc, char** argv) {
      struct argp_option options[] =
      {
           { "port", 'p', "PORT", 0, "TCP port for the server"},
-          { "power", 'w', "POWER", 0, "start value of the power for the server"},
+          { "power", 'w', "POWER", 0, "Start value of the power for the server"},
           { "verbose", 'v', 0, 0, "Verbose Output"},
           { 0 }
      };

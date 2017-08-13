@@ -11,7 +11,8 @@ Test Class.
 {\ttfamily \#include $<$stdio.\+h$>$}\\*
 {\ttfamily \#include \char`\"{}argp.\+h\char`\"{}}\\*
 {\ttfamily \#include $<$unistd.\+h$>$}\\*
-Include dependency graph for simple-\/iec61850-\/client.c\+:\nopagebreak
+Include dependency graph for simple-\/iec61850-\/client.c\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -30,6 +31,8 @@ int \hyperlink{simple-iec61850-client_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
+const char $\ast$ \hyperlink{simple-iec61850-client_8c_a62f73ea01c816f1996aed4c66f57c4fb}{argp\+\_\+program\+\_\+version} = \char`\"{}Simple I\+EC 61850 Client version 1.\+0.\+0\char`\"{}
+\begin{DoxyCompactList}\small\item\em Global variable for the version. \end{DoxyCompactList}\item 
 char $\ast$ \hyperlink{simple-iec61850-client_8c_a1c2046dcb30a629d6d9f45ff8f403f12}{host}
 \begin{DoxyCompactList}\small\item\em Global variable for the hostname. \end{DoxyCompactList}\item 
 int \hyperlink{simple-iec61850-client_8c_ac31354d08316076b496efb2b3a2c69e6}{tcp\+Port} = 10102
@@ -117,7 +120,14 @@ Function which starts the client and checks the status.
 Details of the function. 
 
 \subsection{Variable Documentation}
-\index{simple-\/iec61850-\/client.\+c@{simple-\/iec61850-\/client.\+c}!count@{count}}
+\index{simple-\/iec61850-\/client.\+c@{simple-\/iec61850-\/client.\+c}!argp\+\_\+program\+\_\+version@{argp\+\_\+program\+\_\+version}}
+\index{argp\+\_\+program\+\_\+version@{argp\+\_\+program\+\_\+version}!simple-\/iec61850-\/client.\+c@{simple-\/iec61850-\/client.\+c}}
+\subsubsection[{\texorpdfstring{argp\+\_\+program\+\_\+version}{argp_program_version}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ argp\+\_\+program\+\_\+version = \char`\"{}Simple I\+EC 61850 Client version 1.\+0.\+0\char`\"{}}\hypertarget{simple-iec61850-client_8c_a62f73ea01c816f1996aed4c66f57c4fb}{}\label{simple-iec61850-client_8c_a62f73ea01c816f1996aed4c66f57c4fb}
+
+
+Global variable for the version. 
+
+This variable is used from argp to set the output for the version option. \index{simple-\/iec61850-\/client.\+c@{simple-\/iec61850-\/client.\+c}!count@{count}}
 \index{count@{count}!simple-\/iec61850-\/client.\+c@{simple-\/iec61850-\/client.\+c}}
 \subsubsection[{\texorpdfstring{count}{count}}]{\setlength{\rightskip}{0pt plus 5cm}int count = -\/1}\hypertarget{simple-iec61850-client_8c_ad43c3812e6d13e0518d9f8b8f463ffcf}{}\label{simple-iec61850-client_8c_ad43c3812e6d13e0518d9f8b8f463ffcf}
 

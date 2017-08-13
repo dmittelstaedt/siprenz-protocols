@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['parse_5fopt',['parse_opt',['../simple-iec61850-client_8c.html#aaf7bc24f3891f0c63a6043f4dc2ab311',1,'simple-iec61850-client.c']]]
+  ['main',['main',['../simple-iec61850-client_8c.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'simple-iec61850-client.c']]]
 ];
