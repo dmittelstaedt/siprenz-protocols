@@ -14,6 +14,13 @@
 #include <unistd.h>
 
 /**
+* Global variable for the version.
+* This variable is used from argp to set the output
+* for the version option.
+*/
+const char *argp_program_version = "Simple IEC 61850 Client version 1.0.0";
+
+/**
 * Global variable for the hostname.
 * Details.
 */
@@ -53,7 +60,7 @@ void runClient() {
 
      if (error == IED_ERROR_OK) {
           printf("Client connected successfully to %s on port %d.\n", host, tcpPort);
-          printf("Client starts reading total active power (TotW.mag) from %s.\n", host);
+          printf("Client starts reading total active power (TotW.mag) from Inverter of IED1.\n");
 
           int counter = 0;
 
@@ -68,7 +75,7 @@ void runClient() {
 
                if (value != NULL) {
                     float fval = MmsValue_toFloat(value);
-                    printf("TotW.mag: %.1f\n", fval);
+                    printf("Reading TotW.mag: %.1f\n", fval);
                     MmsValue_delete(value);
                }
                Thread_sleep(sleepInt * 1000);

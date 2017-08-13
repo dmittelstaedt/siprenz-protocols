@@ -20,6 +20,13 @@
 
 #include "static_model.h"
 
+/**
+* Global variable for the version.
+* This variable is used from argp to set the output
+* for the version option.
+*/
+const char *argp_program_version = "Simple IEC 61850 Server version 1.0.0";
+
 /* import IEC 61850 device model created from SCL-File */
 extern IedModel iedModel;
 
