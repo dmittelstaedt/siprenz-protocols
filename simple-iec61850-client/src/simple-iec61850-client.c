@@ -1,17 +1,13 @@
 /**
+ * Test Class. More Details to Test Class
  * @file simple-iec61850-client.c
  * @author David Mittelstädt
- * @date 12 Aug 2017
- * @brief C-File implements a simple IEC 61850 client.
- *
- * This C-File implements a simple IEC 61850 client. The library libIEC61850
- * is used for implementing the protocol IEC 61850. Argp is used to parse
- * the options and arguments from the command line.
  * @see https://github.com/dmittelstaedt/siprenz-protocols
  * @see http://libiec61850.com/libiec61850/
  */
 
 #include "iec61850_client.h"
+#include "hal_thread.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include "argp.h"
@@ -56,7 +52,8 @@ void runClient() {
      IedConnection_connect(con, &error, host, tcpPort);
 
      if (error == IED_ERROR_OK) {
-          printf("Client started successfully. Client is connected to %s on port %d.\n", host, tcpPort);
+          printf("Client connected successfully to %s on port %d.\n", host, tcpPort);
+          printf("Client starts reading total active power (TotW.mag) from %s.\n", host);
 
           int counter = 0;
 
@@ -65,16 +62,16 @@ void runClient() {
 
                // If an error occured during sending requests
                if (error != IED_ERROR_OK) {
-                    printf("An error occured.\n");
+                    printf("Lost connection to server %s.\n", host);
                     break;
                }
 
                if (value != NULL) {
                     float fval = MmsValue_toFloat(value);
-                    printf("Read power value: %.1f\n", fval);
+                    printf("TotW.mag: %.1f\n", fval);
                     MmsValue_delete(value);
                }
-               sleep(sleepInt);
+               Thread_sleep(sleepInt * 1000);
                counter++;
           }
 
@@ -92,6 +89,10 @@ void runClient() {
 /**
 * Function which parses the given options and arguments.
 * Details of the function.
+* @param Key
+* @param Value of argument
+* @param Struct
+* @return Return code of parsing the arguments
 */
 static int parse_opt (int key, char *arg, struct argp_state *state) {
      int *arg_count = state->input;
@@ -131,8 +132,8 @@ static int parse_opt (int key, char *arg, struct argp_state *state) {
 /**
 * Main function.
 * Details of the function.
-* @param Number of arguments
-* @param Content of the arguments
+* @param argc Number of arguments
+* @param argv Content of the arguments
 * @return Exit status of the application
 */
 int main(int argc, char** argv) {

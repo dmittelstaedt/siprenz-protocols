@@ -1,3 +1,16 @@
+/**
+ * @file simple-iec61850-client.c
+ * @author David Mittelstädt
+ * @date 12 Aug 2017
+ * @brief C-File implements a simple IEC 61850 client. Increases TotW of MMXU1
+ *
+ * This C-File implements a simple IEC 61850 client. The library libIEC61850
+ * is used for implementing the protocol IEC 61850. Argp is used to parse
+ * the options and arguments from the command line.
+ * @see https://github.com/dmittelstaedt/siprenz-protocols
+ * @see http://libiec61850.com/libiec61850/
+ */
+
 #include "iec61850_server.h"
 #include "hal_thread.h"
 #include <signal.h>
@@ -33,7 +46,7 @@ void runServer() {
           exit(-1);
      } else {
           printf("Server started successfully on port %d.\n", tcpPort);
-          printf("Power at start: %.1f\n", power);
+          printf("Total active power (TotW.mag) at start: %.1f\n", power);
           if (isVerbose == 1) {
                printf("Running in verbose mode.\n");
           }
@@ -53,7 +66,7 @@ void runServer() {
           IedServer_unlockDataModel(iedServer);
 
           if (isVerbose == 1) {
-               printf("Setting power to: %.1f\n", power);
+               printf("Setting TotW.mag to: %.1f\n", power);
           }
 
           power += 0.1f;

@@ -91,9 +91,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>C-File implements a simple IEC 61850 client.  
+<p>Test Class.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;iec61850_client.h&quot;</code><br />
+<code>#include &quot;hal_thread.h&quot;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &quot;argp.h&quot;</code><br />
@@ -132,9 +133,9 @@ Variables</h2></td></tr>
 <tr class="separator:a7c0b25939579bd308b11966fb04288e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>C-File implements a simple IEC 61850 client. </p>
+<div class="textblock"><p>Test Class. </p>
+<p>More Details to Test Class</p>
 <dl class="section author"><dt>Author</dt><dd>David Mittelstädt </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>12 Aug 2017 This C-File implements a simple IEC 61850 client. The library libIEC61850 is used for implementing the protocol IEC 61850. Argp is used to parse the options and arguments from the command line. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="https://github.com/dmittelstaedt/siprenz-protocols">https://github.com/dmittelstaedt/siprenz-protocols</a> </dd>
 <dd>
 <a href="http://libiec61850.com/libiec61850/">http://libiec61850.com/libiec61850/</a> </dd></dl>
@@ -166,8 +167,8 @@ Variables</h2></td></tr>
 <p>Main function. </p>
 <p>Details of the function. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Number</td><td>of arguments </td></tr>
-    <tr><td class="paramname">Content</td><td>of the arguments </td></tr>
+    <tr><td class="paramname">argc</td><td>Number of arguments </td></tr>
+    <tr><td class="paramname">argv</td><td>Content of the arguments </td></tr>
   </table>
   </dd>
 </dl>
@@ -214,7 +215,15 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Function which parses the given options and arguments. </p>
-<p>Details of the function. </p>
+<p>Details of the function. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Key</td><td></td></tr>
+    <tr><td class="paramname">Value</td><td>of argument </td></tr>
+    <tr><td class="paramname">Struct</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return code of parsing the arguments </dd></dl>
 
 </div>
 </div>

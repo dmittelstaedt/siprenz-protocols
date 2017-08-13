@@ -2,10 +2,11 @@
 \label{simple-iec61850-client_8c}\index{src/simple-\/iec61850-\/client.\+c@{src/simple-\/iec61850-\/client.\+c}}
 
 
-C-\/\+File implements a simple I\+EC 61850 client.  
+Test Class.  
 
 
 {\ttfamily \#include \char`\"{}iec61850\+\_\+client.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}hal\+\_\+thread.\+h\char`\"{}}\\*
 {\ttfamily \#include $<$stdlib.\+h$>$}\\*
 {\ttfamily \#include $<$stdio.\+h$>$}\\*
 {\ttfamily \#include \char`\"{}argp.\+h\char`\"{}}\\*
@@ -40,14 +41,13 @@ int \hyperlink{simple-iec61850-client_8c_a7c0b25939579bd308b11966fb04288e0}{slee
 
 
 \subsection{Detailed Description}
-C-\/\+File implements a simple I\+EC 61850 client. 
+Test Class. 
+
+More Details to Test Class
 
 \begin{DoxyAuthor}{Author}
 David Mittelstädt 
 \end{DoxyAuthor}
-\begin{DoxyDate}{Date}
-12 Aug 2017 This C-\/\+File implements a simple I\+EC 61850 client. The library lib\+I\+E\+C61850 is used for implementing the protocol I\+EC 61850. Argp is used to parse the options and arguments from the command line. 
-\end{DoxyDate}
 \begin{DoxySeeAlso}{See also}
 \href{https://github.com/dmittelstaedt/siprenz-protocols}{\tt https\+://github.\+com/dmittelstaedt/siprenz-\/protocols} 
 
@@ -70,9 +70,9 @@ Main function.
 
 Details of the function. 
 \begin{DoxyParams}{Parameters}
-{\em Number} & of arguments \\
+{\em argc} & Number of arguments \\
 \hline
-{\em Content} & of the arguments \\
+{\em argv} & Content of the arguments \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -91,7 +91,19 @@ Exit status of the application
 
 Function which parses the given options and arguments. 
 
-Details of the function. \index{simple-\/iec61850-\/client.\+c@{simple-\/iec61850-\/client.\+c}!run\+Client@{run\+Client}}
+Details of the function. 
+\begin{DoxyParams}{Parameters}
+{\em Key} & \\
+\hline
+{\em Value} & of argument \\
+\hline
+{\em Struct} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return code of parsing the arguments 
+\end{DoxyReturn}
+\index{simple-\/iec61850-\/client.\+c@{simple-\/iec61850-\/client.\+c}!run\+Client@{run\+Client}}
 \index{run\+Client@{run\+Client}!simple-\/iec61850-\/client.\+c@{simple-\/iec61850-\/client.\+c}}
 \subsubsection[{\texorpdfstring{run\+Client()}{runClient()}}]{\setlength{\rightskip}{0pt plus 5cm}void run\+Client (
 \begin{DoxyParamCaption}
