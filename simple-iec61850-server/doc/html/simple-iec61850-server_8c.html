@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Simple IEC 61850 Client: src/simple-iec61850-client.c File Reference</title>
+<title>Simple IEC 61850 Server: src/simple-iec61850-server.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Simple IEC 61850 Client
+   <div id="projectname">Simple IEC 61850 Server
    </div>
   </td>
  </tr>
@@ -87,57 +87,72 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">simple-iec61850-client.c File Reference</div>  </div>
+<div class="title">simple-iec61850-server.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Simple IEC 61850 Client.  
+<p>Simple IEC 61850 Server.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;iec61850_client.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;iec61850_server.h&quot;</code><br />
 <code>#include &quot;hal_thread.h&quot;</code><br />
+<code>#include &lt;signal.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &quot;argp.h&quot;</code><br />
-<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &quot;static_model.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Include dependency graph for simple-iec61850-client.c:</div>
+Include dependency graph for simple-iec61850-server.c:</div>
 <div class="dyncontent">
-<div class="center"><img src="simple-iec61850-client_8c__incl.png" border="0" usemap="#src_2simple-iec61850-client_8c" alt=""/></div>
+<div class="center"><img src="simple-iec61850-server_8c__incl.png" border="0" usemap="#src_2simple-iec61850-server_8c" alt=""/></div>
+<map name="src_2simple-iec61850-server_8c" id="src_2simple-iec61850-server_8c">
+</map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a19c4ac63742805a0bfd8fc4a512b42d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simple-iec61850-client_8c.html#a19c4ac63742805a0bfd8fc4a512b42d3">runClient</a> ()</td></tr>
-<tr class="memdesc:a19c4ac63742805a0bfd8fc4a512b42d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function which starts the client and checks the status.  <a href="#a19c4ac63742805a0bfd8fc4a512b42d3">More...</a><br /></td></tr>
-<tr class="separator:a19c4ac63742805a0bfd8fc4a512b42d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf7bc24f3891f0c63a6043f4dc2ab311"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simple-iec61850-client_8c.html#aaf7bc24f3891f0c63a6043f4dc2ab311">parse_opt</a> (int key, char *arg, struct argp_state *state)</td></tr>
+<tr class="memitem:aa0bd1ed4ed81822b72a2b4fb9acba63f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0bd1ed4ed81822b72a2b4fb9acba63f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simple-iec61850-server_8c.html#aa0bd1ed4ed81822b72a2b4fb9acba63f">sigint_handler</a> (int signalId)</td></tr>
+<tr class="memdesc:aa0bd1ed4ed81822b72a2b4fb9acba63f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to implement signal handler for abort. <br /></td></tr>
+<tr class="separator:aa0bd1ed4ed81822b72a2b4fb9acba63f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab704e21febb6ba6f62fd7182fabea02b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab704e21febb6ba6f62fd7182fabea02b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simple-iec61850-server_8c.html#ab704e21febb6ba6f62fd7182fabea02b">runServer</a> ()</td></tr>
+<tr class="memdesc:ab704e21febb6ba6f62fd7182fabea02b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for running the server. <br /></td></tr>
+<tr class="separator:ab704e21febb6ba6f62fd7182fabea02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf7bc24f3891f0c63a6043f4dc2ab311"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simple-iec61850-server_8c.html#aaf7bc24f3891f0c63a6043f4dc2ab311">parse_opt</a> (int key, char *arg, struct argp_state *state)</td></tr>
 <tr class="memdesc:aaf7bc24f3891f0c63a6043f4dc2ab311"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function which parses the given options and arguments.  <a href="#aaf7bc24f3891f0c63a6043f4dc2ab311">More...</a><br /></td></tr>
 <tr class="separator:aaf7bc24f3891f0c63a6043f4dc2ab311"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simple-iec61850-client_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
+<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simple-iec61850-server_8c.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
 <tr class="memdesc:a3c04138a5bfe5d72780bb7e82a18e627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function.  <a href="#a3c04138a5bfe5d72780bb7e82a18e627">More...</a><br /></td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a62f73ea01c816f1996aed4c66f57c4fb"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simple-iec61850-client_8c.html#a62f73ea01c816f1996aed4c66f57c4fb">argp_program_version</a> = &quot;Simple IEC 61850 Client version 1.0.0&quot;</td></tr>
+<tr class="memitem:a62f73ea01c816f1996aed4c66f57c4fb"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simple-iec61850-server_8c.html#a62f73ea01c816f1996aed4c66f57c4fb">argp_program_version</a> = &quot;Simple IEC 61850 Server version 1.0.0&quot;</td></tr>
 <tr class="memdesc:a62f73ea01c816f1996aed4c66f57c4fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global variable for the version.  <a href="#a62f73ea01c816f1996aed4c66f57c4fb">More...</a><br /></td></tr>
 <tr class="separator:a62f73ea01c816f1996aed4c66f57c4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c2046dcb30a629d6d9f45ff8f403f12"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simple-iec61850-client_8c.html#a1c2046dcb30a629d6d9f45ff8f403f12">host</a></td></tr>
-<tr class="memdesc:a1c2046dcb30a629d6d9f45ff8f403f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global variable for the hostname.  <a href="#a1c2046dcb30a629d6d9f45ff8f403f12">More...</a><br /></td></tr>
-<tr class="separator:a1c2046dcb30a629d6d9f45ff8f403f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac31354d08316076b496efb2b3a2c69e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simple-iec61850-client_8c.html#ac31354d08316076b496efb2b3a2c69e6">tcpPort</a> = 10102</td></tr>
-<tr class="memdesc:ac31354d08316076b496efb2b3a2c69e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global variable for the TCP Port.  <a href="#ac31354d08316076b496efb2b3a2c69e6">More...</a><br /></td></tr>
+<tr class="memitem:a12458534e574afa1fd44b76a5b691719"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12458534e574afa1fd44b76a5b691719"></a>
+IedModel&#160;</td><td class="memItemRight" valign="bottom"><b>iedModel</b></td></tr>
+<tr class="separator:a12458534e574afa1fd44b76a5b691719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f45113638a0b749a8a205d2cd7fb42b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f45113638a0b749a8a205d2cd7fb42b"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simple-iec61850-server_8c.html#a2f45113638a0b749a8a205d2cd7fb42b">running</a> = 0</td></tr>
+<tr class="memdesc:a2f45113638a0b749a8a205d2cd7fb42b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global variable for state of server. <br /></td></tr>
+<tr class="separator:a2f45113638a0b749a8a205d2cd7fb42b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac31354d08316076b496efb2b3a2c69e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac31354d08316076b496efb2b3a2c69e6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simple-iec61850-server_8c.html#ac31354d08316076b496efb2b3a2c69e6">tcpPort</a> = 10102</td></tr>
+<tr class="memdesc:ac31354d08316076b496efb2b3a2c69e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global variable for tcp port. <br /></td></tr>
 <tr class="separator:ac31354d08316076b496efb2b3a2c69e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad43c3812e6d13e0518d9f8b8f463ffcf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simple-iec61850-client_8c.html#ad43c3812e6d13e0518d9f8b8f463ffcf">count</a> = -1</td></tr>
-<tr class="memdesc:ad43c3812e6d13e0518d9f8b8f463ffcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global variable for number of requests.  <a href="#ad43c3812e6d13e0518d9f8b8f463ffcf">More...</a><br /></td></tr>
-<tr class="separator:ad43c3812e6d13e0518d9f8b8f463ffcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c0b25939579bd308b11966fb04288e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simple-iec61850-client_8c.html#a7c0b25939579bd308b11966fb04288e0">sleepInt</a> = 1000</td></tr>
-<tr class="memdesc:a7c0b25939579bd308b11966fb04288e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global variable for the time between sending requests.  <a href="#a7c0b25939579bd308b11966fb04288e0">More...</a><br /></td></tr>
-<tr class="separator:a7c0b25939579bd308b11966fb04288e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2eae6b68aca1a3174f57157c50f58f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2eae6b68aca1a3174f57157c50f58f1"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simple-iec61850-server_8c.html#af2eae6b68aca1a3174f57157c50f58f1">power</a> = 500.f</td></tr>
+<tr class="memdesc:af2eae6b68aca1a3174f57157c50f58f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global variable for the the default value of the power. <br /></td></tr>
+<tr class="separator:af2eae6b68aca1a3174f57157c50f58f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af40caf0f193ce7061522488c9df48f02"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af40caf0f193ce7061522488c9df48f02"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simple-iec61850-server_8c.html#af40caf0f193ce7061522488c9df48f02">isVerbose</a> = 0</td></tr>
+<tr class="memdesc:af40caf0f193ce7061522488c9df48f02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global variable for verbose output. <br /></td></tr>
+<tr class="separator:af40caf0f193ce7061522488c9df48f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Simple IEC 61850 Client. </p>
-<p>Thie Class represents the simple iec 61850 client based on the library libiec61850.</p>
+<div class="textblock"><p>Simple IEC 61850 Server. </p>
+<p>This C-File implements a simple IEC 61850 client. The library libIEC61850 is used for implementing the protocol IEC 61850. Argp is used to parse the options and arguments from the command line.</p>
 <dl class="section author"><dt>Author</dt><dd>David Mittelstädt </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="https://github.com/dmittelstaedt/siprenz-protocols">https://github.com/dmittelstaedt/siprenz-protocols</a> </dd>
 <dd>
@@ -168,7 +183,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Main function. </p>
-<p>Starts the parsing function and then starts the server. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Starts the parsing function and then starts the server </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">argc</td><td>Number of arguments </td></tr>
     <tr><td class="paramname">argv</td><td>Content of the arguments </td></tr>
@@ -230,97 +245,19 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a19c4ac63742805a0bfd8fc4a512b42d3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void runClient </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Function which starts the client and checks the status. </p>
-<p>Details of the function. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="a62f73ea01c816f1996aed4c66f57c4fb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* argp_program_version = &quot;Simple IEC 61850 Client version 1.0.0&quot;</td>
+          <td class="memname">const char* argp_program_version = &quot;Simple IEC 61850 Server version 1.0.0&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Global variable for the version. </p>
 <p>This variable is used from argp to set the output for the version option. </p>
-
-</div>
-</div>
-<a class="anchor" id="ad43c3812e6d13e0518d9f8b8f463ffcf"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int count = -1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Global variable for number of requests. </p>
-<p>Details. </p>
-
-</div>
-</div>
-<a class="anchor" id="a1c2046dcb30a629d6d9f45ff8f403f12"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* host</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Global variable for the hostname. </p>
-<p>Details. </p>
-
-</div>
-</div>
-<a class="anchor" id="a7c0b25939579bd308b11966fb04288e0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sleepInt = 1000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Global variable for the time between sending requests. </p>
-<p>Details. </p>
-
-</div>
-</div>
-<a class="anchor" id="ac31354d08316076b496efb2b3a2c69e6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int tcpPort = 10102</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Global variable for the TCP Port. </p>
-<p>Details. </p>
 
 </div>
 </div>

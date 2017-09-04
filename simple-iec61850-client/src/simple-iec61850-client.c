@@ -1,5 +1,6 @@
 /**
- * Test Class. More Details to Test Class
+ * Simple IEC 61850 Client. Thie Class represents the simple iec 61850 client
+ * based on the library libIEC61850. 
  * @file simple-iec61850-client.c
  * @author David Mittelstädt
  * @see https://github.com/dmittelstaedt/siprenz-protocols
@@ -42,7 +43,7 @@ int count = -1;
 * Global variable for the time between sending requests.
 * Details.
 */
-int sleepInt = 1;
+int sleepInt = 1000;
 
 /**
 * Function which starts the client and checks the status.
@@ -78,7 +79,7 @@ void runClient() {
                     printf("Reading TotW.mag: %.1f\n", fval);
                     MmsValue_delete(value);
                }
-               Thread_sleep(sleepInt * 1000);
+               Thread_sleep(sleepInt);
                counter++;
           }
 
@@ -95,10 +96,11 @@ void runClient() {
 
 /**
 * Function which parses the given options and arguments.
-* Details of the function.
-* @param Key
-* @param Value of argument
-* @param Struct
+* Function to parse the given options and arguments with the
+* help of argp.
+* @param key Key for identifying
+* @param arg Value of the key
+* @param state Struct
 * @return Return code of parsing the arguments
 */
 static int parse_opt (int key, char *arg, struct argp_state *state) {
@@ -138,7 +140,8 @@ static int parse_opt (int key, char *arg, struct argp_state *state) {
 
 /**
 * Main function.
-* Details of the function.
+* Starts the parsing function and then starts the
+* server.
 * @param argc Number of arguments
 * @param argv Content of the arguments
 * @return Exit status of the application

@@ -1,12 +1,9 @@
 /**
- * @file simple-iec61850-client.c
- * @author David Mittelstädt
- * @date 12 Aug 2017
- * @brief C-File implements a simple IEC 61850 client. Increases TotW of MMXU1
- *
- * This C-File implements a simple IEC 61850 client. The library libIEC61850
+ * Simple IEC 61850 Server. This C-File implements a simple IEC 61850 client. The library libIEC61850
  * is used for implementing the protocol IEC 61850. Argp is used to parse
  * the options and arguments from the command line.
+ * @file simple-iec61850-server.c
+ * @author David Mittelstädt
  * @see https://github.com/dmittelstaedt/siprenz-protocols
  * @see http://libiec61850.com/libiec61850/
  */
@@ -30,17 +27,39 @@ const char *argp_program_version = "Simple IEC 61850 Server version 1.0.0";
 /* import IEC 61850 device model created from SCL-File */
 extern IedModel iedModel;
 
+/**
+* Global variable for state of server
+*/
 static int running = 0;
+
+/**
+* Global variable for tcp port
+*/
 int tcpPort = 10102;
+
+/**
+* Global variable for the
+* the default value of the power
+*/
 float power = 500.f;
+
+/**
+* Global variable for verbose output
+*/
 int isVerbose = 0;
 
+/**
+* Function to implement signal handler for abort
+*/
 void sigint_handler(int signalId)
 {
      running = 0;
      printf("Server stopped!.\n");
 }
 
+/**
+* Function for running the server
+*/
 void runServer() {
      IedServer iedServer = IedServer_create(&iedModel);
 
@@ -88,6 +107,15 @@ void runServer() {
      IedServer_destroy(iedServer);
 }
 
+/**
+* Function which parses the given options and arguments.
+* Function to parse the given options and arguments with the
+* help of argp.
+* @param key Key for identifying
+* @param arg Value of the key
+* @param state Struct
+* @return Return code of parsing the arguments
+*/
 static int parse_opt (int key, char *arg, struct argp_state *state)
 {
      switch (key) {
@@ -107,6 +135,14 @@ static int parse_opt (int key, char *arg, struct argp_state *state)
      return 0;
 }
 
+/**
+* Main function.
+* Starts the parsing function and then starts the
+* server
+* @param argc Number of arguments
+* @param argv Content of the arguments
+* @return Exit status of the application
+*/
 int main(int argc, char** argv) {
 
      struct argp_option options[] =

@@ -2,7 +2,7 @@
 \label{simple-iec61850-client_8c}\index{src/simple-\/iec61850-\/client.\+c@{src/simple-\/iec61850-\/client.\+c}}
 
 
-Test Class.  
+Simple I\+EC 61850 Client.  
 
 
 {\ttfamily \#include \char`\"{}iec61850\+\_\+client.\+h\char`\"{}}\\*
@@ -11,8 +11,7 @@ Test Class.
 {\ttfamily \#include $<$stdio.\+h$>$}\\*
 {\ttfamily \#include \char`\"{}argp.\+h\char`\"{}}\\*
 {\ttfamily \#include $<$unistd.\+h$>$}\\*
-Include dependency graph for simple-\/iec61850-\/client.c\+:
-\nopagebreak
+Include dependency graph for simple-\/iec61850-\/client.c\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -39,14 +38,14 @@ int \hyperlink{simple-iec61850-client_8c_ac31354d08316076b496efb2b3a2c69e6}{tcp\
 \begin{DoxyCompactList}\small\item\em Global variable for the T\+CP Port. \end{DoxyCompactList}\item 
 int \hyperlink{simple-iec61850-client_8c_ad43c3812e6d13e0518d9f8b8f463ffcf}{count} = -\/1
 \begin{DoxyCompactList}\small\item\em Global variable for number of requests. \end{DoxyCompactList}\item 
-int \hyperlink{simple-iec61850-client_8c_a7c0b25939579bd308b11966fb04288e0}{sleep\+Int} = 1
+int \hyperlink{simple-iec61850-client_8c_a7c0b25939579bd308b11966fb04288e0}{sleep\+Int} = 1000
 \begin{DoxyCompactList}\small\item\em Global variable for the time between sending requests. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Test Class. 
+Simple I\+EC 61850 Client. 
 
-More Details to Test Class
+Thie Class represents the simple iec 61850 client based on the library libiec61850.
 
 \begin{DoxyAuthor}{Author}
 David Mittelstädt 
@@ -71,7 +70,7 @@ David Mittelstädt
 
 Main function. 
 
-Details of the function. 
+Starts the parsing function and then starts the server. 
 \begin{DoxyParams}{Parameters}
 {\em argc} & Number of arguments \\
 \hline
@@ -94,13 +93,13 @@ Exit status of the application
 
 Function which parses the given options and arguments. 
 
-Details of the function. 
+Function to parse the given options and arguments with the help of argp. 
 \begin{DoxyParams}{Parameters}
-{\em Key} & \\
+{\em key} & Key for identifying \\
 \hline
-{\em Value} & of argument \\
+{\em arg} & Value of the key \\
 \hline
-{\em Struct} & \\
+{\em state} & Struct \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -143,7 +142,7 @@ Global variable for the hostname.
 
 Details. \index{simple-\/iec61850-\/client.\+c@{simple-\/iec61850-\/client.\+c}!sleep\+Int@{sleep\+Int}}
 \index{sleep\+Int@{sleep\+Int}!simple-\/iec61850-\/client.\+c@{simple-\/iec61850-\/client.\+c}}
-\subsubsection[{\texorpdfstring{sleep\+Int}{sleepInt}}]{\setlength{\rightskip}{0pt plus 5cm}int sleep\+Int = 1}\hypertarget{simple-iec61850-client_8c_a7c0b25939579bd308b11966fb04288e0}{}\label{simple-iec61850-client_8c_a7c0b25939579bd308b11966fb04288e0}
+\subsubsection[{\texorpdfstring{sleep\+Int}{sleepInt}}]{\setlength{\rightskip}{0pt plus 5cm}int sleep\+Int = 1000}\hypertarget{simple-iec61850-client_8c_a7c0b25939579bd308b11966fb04288e0}{}\label{simple-iec61850-client_8c_a7c0b25939579bd308b11966fb04288e0}
 
 
 Global variable for the time between sending requests. 
